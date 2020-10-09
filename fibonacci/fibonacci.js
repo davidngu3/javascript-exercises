@@ -1,4 +1,8 @@
 const fibonacci = function(start) {
+    if (start < 0) {
+        return "OOPS";
+    }
+    start = parseInt(start);
     return fib_aux(start, 0, 1);
 }
 
